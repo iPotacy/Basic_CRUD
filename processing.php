@@ -24,7 +24,8 @@ if (isset($_POST['add']))
         echo "Error: " . $sql . "<br>" . mysqli_error($connection);
     }
 } 
-elseif (isset($_POST['edit'])) {
+elseif (isset($_POST['edit'])) 
+{
     // Jika tombol "Edit User" ditekan, ambil data dari formulir
     $id = $_POST['id'];
     $first_name = $_POST['first_name'];
