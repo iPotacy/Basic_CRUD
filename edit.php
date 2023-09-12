@@ -3,7 +3,8 @@
 include("config.php"); 
 
 // Memeriksa apakah parameter 'id' ada dalam URL
-if (isset($_GET['id'])) {
+if (isset($_GET['id'])) 
+{
   $id = $_GET['id'];
   // Query untuk mengambil data pengguna berdasarkan ID
   $sql = "SELECT * FROM users WHERE id = $id";
